@@ -1,0 +1,23 @@
+<h2>Welcome to <%=user.name%>'s page!</h2>
+<div>
+   <b>Email: </b> <%=user.email%>
+</div>
+<div>
+   <b>Phone: </b> <%=user.phone%>
+</div>
+<div>
+   <b>Authoriztion Role: </b> <%=user.role%>
+</div>
+<div>
+   <b>Last Action Taken: </b> <%=user.lastAction%>
+</div>
+<div>
+   <b>Last Login Time: </b> <%=user.lastLogIn%>
+</div>
+<div>
+    <a href="/users/<%=user._id%>/edit">Edit user details</a>
+    <br>
+    <form action="/users/<%=user.id%>?_method=DELETE" method="post">
+        <button type="submit">Delete</button>
+    </form>
+</div>

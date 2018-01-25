@@ -1,0 +1,32 @@
+<div>
+    <h2> Welcome to the login page!</h2>
+    <a href="/users/new"> Insert user </a>
+</div>
+
+<hr>
+<%users.forEach(function(user){%>
+<div>
+    <p>Name: <%=user.name%></p>
+</div>
+<div>
+    <p>Email: <%=user.email%></p>
+</div>
+<div>
+    <p>Phone: <%=user.phone%></p>
+</div>
+<div>
+    <p>Authorization role: <%=user.role%></p>
+</div>
+<div>
+    <p>History of Last Action: <%=user.lastAction%></p>
+</div>
+<div>
+    <p>Date of  Last Login: <%=user.lastLogIn.getDate()%>.<%=user.lastLogIn.getMonth() +1%>.<%=user.lastLogIn.getFullYear()%> </p>
+</div>
+<div>
+    <a href="/users/<%=user._id%>"> More info </a>
+</div>
+
+<hr>
+<%})%>
+

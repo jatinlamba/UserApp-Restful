@@ -1,0 +1,9 @@
+<form action="/users/<%=user._id%>?_method=PUT" method="post">
+    <input type="text" name="d[name]" value="<%=user.name%>">
+    <input type="text" name="d[email]" value="<%=user.email%>">
+    <input type="text" name="d[phone]" value="<%=user.phone%>">
+    <input type="text" name="d[role]" value="<%=user.role%>">
+    <input type="text" name="d[lastAction]" value="<%=user.lastAction%>">
+    <input type="date" name="d[lastLogIn]" value="<%=user.lastLogIn%>">
+    <button type="submit">Submit</button>
+</form>
